@@ -1,4 +1,21 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<base href="../../../" />
+		<script src="list.js"></script>
+		<script src="page.js"></script>
+		<link type="text/css" rel="stylesheet" href="page.css" />
+	</head>
+	<body>
+		
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * @author mrdoob / http://mrdoob.com/
  * @author philogb / http://blog.thejit.org/
  * @author egraether / http://egraether.com/
@@ -7,40 +24,40 @@
 
 /**
  * Creates a new [name].
- * @classdesc <p class="desc">
+ * @classdesc &lt;p class="desc">
  Class representing a 2D [link:https://en.wikipedia.org/wiki/Vector_space vector].
 
  A 2D vector is an ordered pair of numbers (labeled x and y), which can be used to
  represent a number of things, such as:
- </p>
+ &lt;/p>
 
- <ul>
- <li>
+ &lt;ul>
+ &lt;li>
  A point in 2D space (i.e. a position on a plane).
- </li>
- <li>
+ &lt;/li>
+ &lt;li>
  A direction and length across a plane. In three.js the length will always be the
  [link:https://en.wikipedia.org/wiki/Euclidean_distance Euclidean distance]
  (straight-line distance) from (0, 0) to (x, y) and the direction is also
  measured from (0, 0) towards (x, y).
- </li>
- <li>
+ &lt;/li>
+ &lt;li>
  Any arbitrary ordered pair of numbers.
- </li>
- </ul>
+ &lt;/li>
+ &lt;/ul>
 
- <p>
+ &lt;p>
  There are other things a 2D vector can be used to represent, such as momentum
  vectors, complex numbers and so on,	however these are the most common uses in three.js.
- </p>
- * @example <code>
+ &lt;/p>
+ * @example &lt;code>
 var a = new THREE.Vector2( 0, 1 );
 
 //no arguments; will be initialised to (0, 0)
 var b = new THREE.Vector2( );
 
 var d = a.distanceTo( b );
- </code>
+ &lt;/code>
  * @class
  * @param {number} x - the x value of the vector. Default is *0*.
  * @param {number} y - the y value of the vector. Default is *0*.
@@ -309,7 +326,7 @@ Object.assign( Vector2.prototype, {
 
 	clamp: function ( min, max ) {
 
-		// assumes min < max, componentwise
+		// assumes min &lt; max, componentwise
 
 		this.x = Math.max( min.x, Math.min( max.x, this.x ) );
 		this.y = Math.max( min.y, Math.min( max.y, this.y ) );
@@ -371,8 +388,8 @@ Object.assign( Vector2.prototype, {
 
 	roundToZero: function () {
 
-		this.x = ( this.x < 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
-		this.y = ( this.y < 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
+		this.x = ( this.x &lt; 0 ) ? Math.ceil( this.x ) : Math.floor( this.x );
+		this.y = ( this.y &lt; 0 ) ? Math.ceil( this.y ) : Math.floor( this.y );
 
 		return this;
 
@@ -429,7 +446,7 @@ Object.assign( Vector2.prototype, {
 
 		var angle = Math.atan2( this.y, this.x );
 
-		if ( angle < 0 ) angle += 2 * Math.PI;
+		if ( angle &lt; 0 ) angle += 2 * Math.PI;
 
 		return angle;
 
@@ -477,7 +494,7 @@ Object.assign( Vector2.prototype, {
 
 	equals: function ( v ) {
 
-		return ( ( v.x === this.x ) && ( v.y === this.y ) );
+		return ( ( v.x === this.x ) &amp;&amp; ( v.y === this.y ) );
 
 	},
 
@@ -537,3 +554,12 @@ Object.assign( Vector2.prototype, {
 
 
 export { Vector2 };
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+	</body>
+</html>
