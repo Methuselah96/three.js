@@ -1,8 +1,10 @@
-export default class ChainMap {
+export default class ChainMap<K extends readonly unknown[], V> {
+
+	weakMap: WeakMap<readonly unknown[], WeakMap<K, V> | V>
 
 	constructor() {
 
-		this.weakMap = new WeakMap();
+		this.weakMap = new WeakMap<K, V>();
 
 	}
 

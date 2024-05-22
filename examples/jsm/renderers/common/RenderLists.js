@@ -1,4 +1,4 @@
-import ChainMap from './ChainMap.js';
+import ChainMap from './ChainMap.ts';
 import RenderList from './RenderList.js';
 
 class RenderLists {

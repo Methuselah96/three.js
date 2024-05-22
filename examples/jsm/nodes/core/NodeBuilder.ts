@@ -35,7 +35,7 @@ const typeFromLength = new Map( [
 	[ 16, 'mat4' ]
 ] );
 
-const typeFromArray = new Map( [
+const typeFromArray = new Map<typeof Int8Array | typeof Int16Array | typeof Int32Array | typeof Uint8Array | typeof Uint16Array | typeof Uint32Array | typeof Float32Array, string>( [
 	[ Int8Array, 'int' ],
 	[ Int16Array, 'int' ],
 	[ Int32Array, 'int' ],
@@ -535,7 +535,7 @@ class NodeBuilder {
 
 	}
 
-	getTypeFromLength( length, componentType = 'float' ) {
+	getTypeFromLength( length: number, componentType = 'float' ) {
 
 		if ( length === 1 ) return componentType;
 
